@@ -16,7 +16,12 @@ public class ArticleController {
     @Autowired
     private ArticleRepository articleRepository;
 
+    @RequestMapping("/detail")
+    @ResponseBody
+    public Article show() {
 
+        return articleRepository.findById(1L).get();
+    }
     @RequestMapping("/list")
     @ResponseBody
     public List<Article> showList() {

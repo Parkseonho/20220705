@@ -20,3 +20,4 @@ public class Article {
     private String body;
     private long userId;
 }
+
